@@ -13,4 +13,4 @@ Documenting my journey mastering Rust. Focuses on implementing algorithms, writi
 ### Medium Level
 
 1. [Binary Search](binary-search/src/lib.rs) - ( generics, trait bounds, patterns )
-1. [Robot Name](robot-name/src/lib.rs) - ( mutex, global state mutability, randomness )
+1. [Robot Name](robot-name/src/lib.rs) - ( mutex, hashset, randomness )
