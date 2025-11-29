@@ -13,4 +13,5 @@ Documenting my journey mastering Rust. Focuses on implementing algorithms, writi
 ### Medium Level
 
 1. [Binary Search](binary-search/README.md) - ( generics, trait bounds, patterns )
+1. [Grade School](grade-school/README.md) - ( hashmap, structs, vectors )
 1. [Robot Name](robot-name/README.md) - ( mutex, hashset, randomness )
