@@ -7,6 +7,7 @@ Documenting my journey mastering Rust. Focuses on implementing algorithms, writi
 ### Medium Level
 
 1. [Binary Search](binary-search/README.md) - ( generics, trait bounds, patterns )
+1. [DOT DSL](dot-dsl/README.md) - ( structs, modules, builder pattern )
 1. [Grade School](grade-school/README.md) - ( hashmap, structs, vectors )
 1. [Robot Name](robot-name/README.md) - ( mutex, hashset, randomness )
 1. [Space Age](space-age/README.md) - ( traits, macros )

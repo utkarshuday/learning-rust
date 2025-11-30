@@ -1,0 +1,9 @@
+[package]
+name = "dot-dsl"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[lints.clippy]
+new_without_default = "allow"
