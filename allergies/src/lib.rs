@@ -1,7 +1,19 @@
+use crate::Allergen::*;
 pub struct Allergies(u32);
 
-#[derive(Debug, PartialEq)]
+#[derive(Debug, PartialEq, Clone, Copy)]
 pub enum Allergen {
+    Eggs = 0,
+    Peanuts = 1,
+    Shellfish = 2,
+    Strawberries = 3,
+    Tomatoes = 4,
+    Chocolate = 5,
+    Pollen = 6,
+    Cats = 7,
+}
+
+const ALLERGENS: [Allergen; 8] = [
     Eggs,
     Peanuts,
     Shellfish,
@@ -10,67 +22,25 @@ pub enum Allergen {
     Chocolate,
     Pollen,
     Cats,
-}
+];
 
 impl Allergies {
-    fn allergen_value(allergen: &Allergen) -> u32 {
-        match allergen {
-            Allergen::Eggs => 0,
-            Allergen::Peanuts => 1,
-            Allergen::Shellfish => 2,
-            Allergen::Strawberries => 3,
-            Allergen::Tomatoes => 4,
-            Allergen::Chocolate => 5,
-            Allergen::Pollen => 6,
-            Allergen::Cats => 7,
-        }
-    }
     pub fn new(score: u32) -> Self {
         Self(score)
     }
 
     pub fn is_allergic_to(&self, allergen: &Allergen) -> bool {
-        let k = Allergies::allergen_value(allergen);
+        let k = *allergen as u32;
         let is_allergic = self.0 & (1 << k);
-        is_allergic > 0
+        is_allergic != 0
     }
 
     pub fn allergies(&self) -> Vec<Allergen> {
-        let mut ans = Vec::new();
-
-        if self.is_allergic_to(&Allergen::Eggs) {
-            ans.push(Allergen::Eggs);
-        }
-
-        if self.is_allergic_to(&Allergen::Peanuts) {
-            ans.push(Allergen::Peanuts);
-        }
-
-        if self.is_allergic_to(&Allergen::Shellfish) {
-            ans.push(Allergen::Shellfish);
-        }
-
-        if self.is_allergic_to(&Allergen::Strawberries) {
-            ans.push(Allergen::Strawberries);
-        }
-
-        if self.is_allergic_to(&Allergen::Tomatoes) {
-            ans.push(Allergen::Tomatoes);
-        }
-
-        if self.is_allergic_to(&Allergen::Chocolate) {
-            ans.push(Allergen::Chocolate);
-        }
-
-        if self.is_allergic_to(&Allergen::Pollen) {
-            ans.push(Allergen::Pollen);
-        }
-
-        if self.is_allergic_to(&Allergen::Cats) {
-            ans.push(Allergen::Cats);
-        }
-
-        ans
+        ALLERGENS
+            .iter()
+            .filter(|allergen| self.is_allergic_to(allergen))
+            .copied()
+            .collect()
     }
 }
 
