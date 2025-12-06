@@ -10,6 +10,7 @@ Documenting my journey mastering Rust. Focuses on implementing algorithms, writi
 1. [DOT DSL](dot-dsl/README.md) - ( structs, modules, builder pattern )
 1. [Grade School](grade-school/README.md) - ( hashmap, structs, vectors )
 1. [Robot Name](robot-name/README.md) - ( mutex, hashset, randomness )
+1. [Simple Linked List](simple-linked-list/README.md) - ( smart pointers, generics, iterators )
 1. [Space Age](space-age/README.md) - ( traits, macros )
 
 ### Easy Level

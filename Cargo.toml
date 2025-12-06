@@ -1,3 +1,15 @@
 [workspace]
 resolver = "3"
-members = ["allergies","binary-search", "bottle-song", "dot-dsl", "gigasecond", "grade-school", "reverse-string", "robot-name", "space-age"]
+members = [
+  "allergies",
+  "binary-search",
+  "bottle-song",
+  "dot-dsl",
+  "fizzy",
+  "gigasecond",
+  "grade-school",
+  "reverse-string",
+  "robot-name",
+  "simple-linked-list",
+  "space-age",
+]
