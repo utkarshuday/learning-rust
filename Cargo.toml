@@ -8,8 +8,10 @@ members = [
   "fizzy",
   "gigasecond",
   "grade-school",
+  "react",
   "reverse-string",
   "robot-name",
   "simple-linked-list",
   "space-age",
+  "todo",
 ]

@@ -1,6 +1,10 @@
 # Learning Rust
 
-Documenting my journey mastering Rust. Focuses on implementing algorithms, writing idiomatic code, and covering concepts from basic to advanced.
+Documenting my journey mastering Rust. Focuses on writing mini projects, implementing algorithms, writing idiomatic code, and covering concepts from basic to advanced.
+
+## Mini Projects
+
+1. [Todo List](todo/README.md)
 
 ## Exercises
 
