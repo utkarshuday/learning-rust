@@ -5,6 +5,7 @@ Documenting my journey mastering Rust. Focuses on writing mini projects, impleme
 ## Mini Projects
 
 1. [Todo List](todo/README.md)
+1. [Web Server](web-server/README.md)
 
 ## Exercises
 
