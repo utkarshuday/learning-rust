@@ -2,6 +2,10 @@
 
 Documenting my journey mastering Rust. Focuses on writing mini projects, implementing algorithms, writing idiomatic code, and covering concepts from basic to advanced.
 
+## Projects
+
+1. [Mini Redis](https://github.com/utkarshuday/mini-redis)
+
 ## Mini Projects
 
 1. [Todo List](todo/README.md)
