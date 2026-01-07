@@ -5,6 +5,7 @@ Documenting my journey mastering Rust. Focuses on writing mini projects, impleme
 ## Projects
 
 1. [Mini Redis](https://github.com/utkarshuday/mini-redis)
+2. [Distributed Systems Challenges](https://github.com/utkarshuday/dist-sys-challenges)
 
 ## Mini Projects
 
